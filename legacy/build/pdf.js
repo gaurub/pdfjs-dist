@@ -6113,7 +6113,8 @@ class PDFObjects {
     return (obj === null || obj === void 0 ? void 0 : obj.capability.settled) || false;
   }
   keys() {
-    return this.#obj.keys();
+    const objs = _classPrivateFieldGet(this, _objs);
+    return objs.keys();
   }
   resolve(objId) {
     let data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
