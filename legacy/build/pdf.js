@@ -6112,6 +6112,9 @@ class PDFObjects {
     const obj = _classPrivateFieldGet(this, _objs)[objId];
     return (obj === null || obj === void 0 ? void 0 : obj.capability.settled) || false;
   }
+  keys() {
+    return this.#obj.keys();
+  }
   resolve(objId) {
     let data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
     const obj = _classPrivateMethodGet(this, _ensureObj, _ensureObj2).call(this, objId);
